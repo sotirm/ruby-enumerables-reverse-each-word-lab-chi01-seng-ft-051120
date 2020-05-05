@@ -1,8 +1,8 @@
 require "pry"
 
 def reverse_each_word(string)
-  new_string = string.split(" ")
+  split_array = string.split(" ")
+  split_array.map{|string| string.reverse}
   binding.pry
-  new_string.map{|string| string.reverse 
-  }
+
 end
